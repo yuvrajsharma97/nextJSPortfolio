@@ -15,6 +15,12 @@ module.exports = {
       screens: {
         xs: { min: "300px", max: "640px" }, // Custom media query
       },
+      colors: {
+        color1: "#808080",
+        color2: "#3137ae",
+        color3: "#2d2d2d",
+        color4: "#fefefe",
+      },
     },
   },
   plugins: [],

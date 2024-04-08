@@ -5,7 +5,7 @@ import Image from "next/image";
 export default function Home() {
   return (
     <main>
-      <section className="z-50">
+      <section>
         <Navbar />
       </section>
       <section>
