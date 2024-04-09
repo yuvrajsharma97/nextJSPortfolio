@@ -48,7 +48,7 @@ const Contact = () => {
     <div id="contact" className="min-h-screen max-h-full w-full pt-5">
       <h1 className="text-center m-4">
         <span className="xs:text-3xl text-4xl  font-normal">
-          Let's <span className="text-color2">Connect</span>
+          Let&apos;s <span className="text-color2">Connect</span>
         </span>
       </h1>
 
