@@ -5,7 +5,7 @@ import React, { useEffect } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
-const Card = ({ image, title, description, link }) => {
+const Card = ({ image, title, titleLink, description, link }) => {
   useEffect(() => {
     Aos.init();
   }, []);
@@ -25,7 +25,9 @@ const Card = ({ image, title, description, link }) => {
 
         <div class="p-5">
           <h5 class="mb-2 text-2xl font-bold text-center text-color3">
-            {title}
+            <a href={titleLink} target="_blank">
+              {title}
+            </a>
           </h5>
 
           <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
@@ -51,18 +53,21 @@ const Project = () => {
       image: "/assets/portflioImage.jpg",
       title: "Next Js Portfolio",
       description: "A portfolio website built using Next Js and Tailwind CSS.",
+      titleLink: "https://yuvrajsharmanextjsportfolio.vercel.app",
       link: "https://github.com/imyuvi1234/nextJSPortfolio",
     },
     {
       image: "/assets/portflioImage.jpg",
       title: "Next Js Portfolio",
       description: "A portfolio website built using Next Js and Tailwind CSS.",
+      titleLink: "https://yuvrajsharmanextjsportfolio.vercel.app",
       link: "https://github.com/imyuvi1234/nextJSPortfolio",
     },
     {
       image: "/assets/portflioImage.jpg",
       title: "Next Js Portfolio",
       description: "A portfolio website built using Next Js and Tailwind CSS.",
+      titleLink: "https://yuvrajsharmanextjsportfolio.vercel.app",
       link: "https://github.com/imyuvi1234/nextJSPortfolio",
     },
   ];
