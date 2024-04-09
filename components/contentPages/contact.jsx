@@ -11,13 +11,6 @@ const Contact = () => {
   const [message, setMessage] = useState("");
   const [status, setStatus] = useState("");
 
-  const handleEmailClick = () => {
-    window.location.href = `mailto:${"yuvraj.sharma.uvs@gmail.com"}`;
-  };
-
-  const handlePhoneClick = () => {
-    window.location.href = `tel:${+447835840186}`;
-  };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -53,9 +46,9 @@ const Contact = () => {
       </h1>
 
       <div className="flex justify-around my-[5rem] flex-wrap">
-        <div
+        <a
           className="flex bg-color2 p-5 rounded-lg cursor-pointer my-2"
-          onClick={handleEmailClick}
+          href="mailto:yuvraj.sharma.uvs@gmail.com"
           data-aos="zoom-in">
           <span className="rounded-full p-3 bg-white">
             <Image
@@ -69,10 +62,10 @@ const Contact = () => {
           <span className="text-white m-auto mx-4">
             yuvraj.sharma.uvs@gmail.com
           </span>
-        </div>
-        <div
+        </a>
+        <a
           className="flex bg-color2 p-5 rounded-lg cursor-pointer my-2"
-          onClick={handlePhoneClick}
+          href="tel:+447835840186"
           data-aos="zoom-in">
           <span className="rounded-full p-3 bg-white">
             <Image
@@ -84,7 +77,7 @@ const Contact = () => {
             />
           </span>
           <span className="text-white m-auto mx-[4rem]">+44 7835840186</span>
-        </div>
+        </a>
       </div>
 
       <div className="flex justify-center items-center">
