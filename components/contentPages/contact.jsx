@@ -67,7 +67,7 @@ const Contact = () => {
             />
           </span>
           <span className="text-white m-auto mx-4">
-            sharma.yuvraj.00786@gmail.com
+            yuvraj.sharma.uvs@gmail.com
           </span>
         </div>
         <div
@@ -83,7 +83,7 @@ const Contact = () => {
               className="rounded-lg"
             />
           </span>
-          <span className="text-white m-auto mx-[4.8rem]">+44 7835840186</span>
+          <span className="text-white m-auto mx-[4rem]">+44 7835840186</span>
         </div>
       </div>
 

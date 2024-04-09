@@ -46,7 +46,7 @@ const ExperiencesCard = ({ year, position, company, count }) => {
         <div className="z-20 w-6 h-6 rounded-full bg-color2 overflow-visible shadow">
           {" "}
           {count < 1 && (
-            <div className="absolute h-full w-[0.1rem] bg-black top-[4.1rem] ms-[0.6rem]"></div>
+            <div className="xs:hidden absolute h-full w-[0.1rem] bg-black top-[4.1rem] ms-[0.6rem]"></div>
           )}
         </div>
         <h1 className="md:absolute w-40 bg-color3 rounded-md px-2 py-1 text-sm leading-tight text-white transform xs:translate-x-2 md:translate-x-7">

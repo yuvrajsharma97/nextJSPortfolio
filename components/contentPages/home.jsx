@@ -1,5 +1,6 @@
 "use client";
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
+import { FaDownload, FaSpinner } from "react-icons/fa";
 import Image from "next/image";
 import anime from "animejs";
 import "./contentPages.css";
@@ -11,6 +12,19 @@ const HomePage = () => {
     { platform: "GitHub", url: "https://github.com/imyuvi1234" },
     { platform: "Twitter", url: "https://twitter.com/i_m_yuvraj_s" },
   ];
+
+  const [isLoading, setIsLoading] = useState(false);
+
+  // Function to simulate downloading
+  const downloadResume = () => {
+    setIsLoading(true);
+
+    window.open("/resume/Yuvraj_Sharma_Resume.pdf", "_blank");
+    // Simulate downloading for 3 seconds
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 1000);
+  };
 
   const textWrapper = useRef(null);
 
@@ -90,6 +104,22 @@ const HomePage = () => {
             Front end developer with experience in <br /> Nextjs, ReactJs,
             TypeScript.
           </p>
+          <div className="flex justify-around my-5">
+            <button
+              onClick={downloadResume}
+              disabled={isLoading}
+              className="bg-color2 hover:bg-color3 text-white font-normal py-2 px-4 rounded focus:outline-none focus:shadow-outline flex items-center">
+              {isLoading ? (
+                <>
+                  <FaSpinner className="animate-spin mr-2" /> Downloading...
+                </>
+              ) : (
+                <>
+                  <FaDownload className="mr-2" /> Download Resume
+                </>
+              )}
+            </button>
+          </div>
         </div>
       </div>
     </div>
