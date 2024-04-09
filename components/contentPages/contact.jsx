@@ -12,7 +12,7 @@ const Contact = () => {
   const [status, setStatus] = useState("");
 
   const handleEmailClick = () => {
-    window.location.href = `mailto:${"yuvraj.sharma.uvs@gmail.com"}`;
+    window.location.href = `mailto:${'yuvraj.sharma.uvs@gmail.com'}`;
   };
 
   const handlePhoneClick = () => {
