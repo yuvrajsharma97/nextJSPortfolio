@@ -1,7 +1,9 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import emailjs from "emailjs-com";
 import Image from "next/image";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const Contact = () => {
   const [name, setName] = useState("");
@@ -10,7 +12,7 @@ const Contact = () => {
   const [status, setStatus] = useState("");
 
   const handleEmailClick = () => {
-    window.location.href = `mailto:${"sharma.yuvraj.00786@gmail"}`;
+    window.location.href = `mailto:${"yuvraj.sharma.uvs@gmail.com"}`;
   };
 
   const handlePhoneClick = () => {
@@ -22,10 +24,10 @@ const Contact = () => {
 
     try {
       await emailjs.sendForm(
-        "YOUR_SERVICE_ID", // Enter your EmailJS service ID
-        "YOUR_TEMPLATE_ID", // Enter your EmailJS template ID
+        "service_e66rdvh", // Enter your EmailJS service ID
+        "template_uakx1no", // Enter your EmailJS template ID
         e.target,
-        "YOUR_USER_ID" // Enter your EmailJS user ID
+        "4ciNb_E3sKaGw4sOj" // Enter your EmailJS user ID
       );
 
       setStatus("Message sent successfully!");
@@ -38,6 +40,10 @@ const Contact = () => {
     }
   };
 
+  useEffect(() => {
+    Aos.init();
+  }, []);
+
   return (
     <div id="contact" className="min-h-screen max-h-full w-full pt-5">
       <h1 className="text-center m-4">
@@ -49,7 +55,8 @@ const Contact = () => {
       <div className="flex justify-around my-[5rem] flex-wrap">
         <div
           className="flex bg-color2 p-5 rounded-lg cursor-pointer my-2"
-          onClick={handleEmailClick}>
+          onClick={handleEmailClick}
+          data-aos="zoom-in">
           <span className="rounded-full p-3 bg-white">
             <Image
               src={"/assets/email.svg"}
@@ -65,7 +72,8 @@ const Contact = () => {
         </div>
         <div
           className="flex bg-color2 p-5 rounded-lg cursor-pointer my-2"
-          onClick={handlePhoneClick}>
+          onClick={handlePhoneClick}
+          data-aos="zoom-in">
           <span className="rounded-full p-3 bg-white">
             <Image
               src={"/assets/phone.svg"}
@@ -122,6 +130,8 @@ const Contact = () => {
               className="bg-color2 hover:bg-color3 w-1/2 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
               Send
             </button>
+          </div>
+          <div className="text-center">
             {status && <p className="text-sm text-gray-500">{status}</p>}
           </div>
         </form>

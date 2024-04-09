@@ -1,6 +1,9 @@
+"use client";
 import Image from "next/image";
-import React from "react";
+import React, { useEffect } from "react";
 import "./contentPages.css";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const SkillsCard = ({ image, description }) => {
   const getRandomHexColor = (min, max) => {
@@ -21,7 +24,8 @@ const SkillsCard = ({ image, description }) => {
   return (
     <div
       className="border border-color2 m-5 rounded-lg p-3 hover:shadow-lg transition duration-300 ease-in-out"
-      style={{ backgroundColor: bgColor }}>
+      style={{ backgroundColor: bgColor }}
+      data-aos="flip-right">
       <Image
         src={image}
         alt={description}
@@ -33,11 +37,18 @@ const SkillsCard = ({ image, description }) => {
   );
 };
 
-const ExperiencesCard = ({ year, position, company }) => {
+const ExperiencesCard = ({ year, position, company, count }) => {
   return (
-    <div className="mb-8 flex flex-col md:flex-row justify-around items-center w-full">
+    <div
+      className="mb-8 flex flex-col md:flex-row justify-around items-center w-full"
+      data-aos="zoom-in">
       <div className="flex flex-row">
-        <div className="z-20 w-6 h-6 rounded-full bg-color2 overflow-visible shadow"></div>
+        <div className="z-20 w-6 h-6 rounded-full bg-color2 overflow-visible shadow">
+          {" "}
+          {count < 1 && (
+            <div className="absolute h-full w-[0.1rem] bg-black top-[4.1rem] ms-[0.6rem]"></div>
+          )}
+        </div>
         <h1 className="md:absolute w-40 bg-color3 rounded-md px-2 py-1 text-sm leading-tight text-white transform xs:translate-x-2 md:translate-x-7">
           {year}
         </h1>
@@ -75,14 +86,20 @@ const Skills = () => {
       year: "2023/09 - 2024/08",
       position: "MSc Computer Science",
       company: "University of Sussex",
+      count: 0,
     },
     {
       year: "2022/09 - 2023/08",
       position: "Frontend Developer",
       company: "Getepay.in",
+      count: 1,
     },
     // Add more experiences here...
   ];
+
+  useEffect(() => {
+    Aos.init();
+  }, []);
 
   return (
     <div id="skills" className="min-h-screen max-h-full w-full pt-5">
