@@ -57,11 +57,12 @@ const Project = () => {
       link: "https://github.com/imyuvi1234/nextJSPortfolio",
     },
     {
-      image: "/assets/portflioImage.jpg",
-      title: "Next Js Portfolio",
-      description: "A portfolio website built using Next Js and Tailwind CSS.",
-      titleLink: "https://yuvrajsharmanextjsportfolio.vercel.app",
-      link: "https://github.com/imyuvi1234/nextJSPortfolio",
+      image: "/assets/pomodoroImage.jpg",
+      title: "Pomodor Productivity App",
+      description:
+        "A pomodoro productivity app built using Next Js and Tailwind CSS.",
+      titleLink: "https://pomodoro-next-js-chi.vercel.app/",
+      link: "https://github.com/imyuvi1234/pomodoro-NextJS",
     },
     {
       image: "/assets/portflioImage.jpg",
