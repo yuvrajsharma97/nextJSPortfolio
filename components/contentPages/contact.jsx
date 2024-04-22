@@ -4,31 +4,31 @@ import emailjs from "emailjs-com";
 import Image from "next/image";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Contact = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
-  const [status, setStatus] = useState("");
-
 
   const handleSubmit = async (e) => {
     e.preventDefault();
 
     try {
       await emailjs.sendForm(
-        "service_e66rdvh", // Enter your EmailJS service ID
-        "template_uakx1no", // Enter your EmailJS template ID
+        "service_5jfgn12", // Enter your EmailJS service ID
+        "template_53lpeka", // Enter your EmailJS template ID
         e.target,
         "4ciNb_E3sKaGw4sOj" // Enter your EmailJS user ID
       );
 
-      setStatus("Message sent successfully!");
+      toast.success("Message sent successfully!");
       setName("");
       setEmail("");
       setMessage("");
     } catch (error) {
-      setStatus("Failed to send message. Please try again later.");
+      toast.success("Failed to send message. Please try again later.");
       console.error("Error sending email:", error);
     }
   };
@@ -48,7 +48,7 @@ const Contact = () => {
       <div className="flex justify-around my-[5rem] flex-wrap">
         <a
           className="flex bg-color2 p-5 rounded-lg cursor-pointer my-2"
-          href="mailto:yuvraj.sharma.uvs@gmail.com"
+          href="mailto:sharma.yuvraj.00786@gmail.com"
           data-aos="zoom-in">
           <span className="rounded-full p-3 bg-white">
             <Image
@@ -59,8 +59,8 @@ const Contact = () => {
               className="rounded-lg"
             />
           </span>
-          <span className="text-white m-auto mx-4">
-            yuvraj.sharma.uvs@gmail.com
+          <span className="text-white m-auto mx-1">
+            sharma.yuvraj.00786@gmail.com
           </span>
         </a>
         <a
@@ -124,9 +124,17 @@ const Contact = () => {
               Send
             </button>
           </div>
-          <div className="text-center">
-            {status && <p className="text-sm text-gray-500">{status}</p>}
-          </div>
+          <ToastContainer
+            position="top-right"
+            autoClose={5000}
+            hideProgressBar={false}
+            newestOnTop={false}
+            closeOnClick
+            rtl={false}
+            pauseOnFocusLoss
+            draggable
+            pauseOnHover
+          />
         </form>
       </div>
     </div>

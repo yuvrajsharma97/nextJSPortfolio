@@ -62,9 +62,9 @@ const HomePage = () => {
 
   return (
     <div id="home" className="min-h-screen max-h-full w-full">
-      <div className="flex flex-wrap w-full xs:pt-[6rem] md:pt-[10rem]">
-        <div className="xs:w-full md:w-1/2 flex flex-col xs:order-last xs:pt-[3rem]">
-          <div className="flex justify-center">
+      <div className="flex flex-wrap w-full pt-[6rem] lg:pt-[10rem]">
+        <div className="w-full lg:w-1/2 flex flex-col order-last">
+          <div className="flex justify-center mt-[2rem] lg:mt-0">
             <Image
               src="/assets/1609.jpg"
               alt="My Image"
@@ -88,7 +88,7 @@ const HomePage = () => {
             ))}
           </div>
         </div>
-        <div className="xs:w-full md:w-1/2">
+        <div className="w-full lg:w-1/2">
           <h1 className="ml9 text-center mt-4">
             <span className="text-wrapper" ref={textWrapper}>
               <span>Hello</span>

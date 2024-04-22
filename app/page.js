@@ -1,4 +1,4 @@
-import Content from "@/components/content.jsx/page";
+import Content from "@/components/content/page";
 import Navbar from "@/components/navbar/page";
 import Image from "next/image";
 
