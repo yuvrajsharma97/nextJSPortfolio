@@ -19,7 +19,7 @@ const Card = ({ image, title, titleLink, description, link }) => {
             alt="hero"
             width={500}
             height={500}
-            className="rounded-lg"
+            className="rounded-lg shadow-sm shadow-indigo-500/40"
           />
         </div>
 
@@ -65,11 +65,11 @@ const Project = () => {
       link: "https://github.com/imyuvi1234/pomodoro-NextJS",
     },
     {
-      image: "/assets/portflioImage.jpg",
+      image: "/assets/projectmanageImage.jpg",
       title: "Next Js Portfolio",
       description: "A portfolio website built using Next Js and Tailwind CSS.",
-      titleLink: "https://yuvrajsharmanextjsportfolio.vercel.app",
-      link: "https://github.com/imyuvi1234/nextJSPortfolio",
+      titleLink: "https://github.com/imyuvi1234/Project-Management",
+      link: "https://github.com/imyuvi1234/Project-Management",
     },
   ];
 
