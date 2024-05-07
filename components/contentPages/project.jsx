@@ -66,7 +66,7 @@ const Project = () => {
     },
     {
       image: "/assets/projectmanageImage.jpg",
-      title: "Next Js Portfolio",
+      title: "Project Management App",
       description: "A portfolio website built using Next Js and Tailwind CSS.",
       titleLink: "https://github.com/imyuvi1234/Project-Management",
       link: "https://github.com/imyuvi1234/Project-Management",
