@@ -54,7 +54,7 @@ const Project = () => {
       title: "Next Js Portfolio",
       description: "A portfolio website built using Next Js and Tailwind CSS.",
       titleLink: "https://yuvrajsharmanextjsportfolio.vercel.app",
-      link: "https://github.com/imyuvi1234/nextJSPortfolio",
+      link: "https://github.com/yuvrajsharma97/nextJSPortfolio",
     },
     {
       image: "/assets/pomodoroImage.jpg",
@@ -62,14 +62,14 @@ const Project = () => {
       description:
         "A pomodoro productivity app built using Next Js and Tailwind CSS.",
       titleLink: "https://pomodoro-next-js-chi.vercel.app/",
-      link: "https://github.com/imyuvi1234/pomodoro-NextJS",
+      link: "https://github.com/yuvrajsharma97/pomodoro-NextJS",
     },
     {
       image: "/assets/projectmanageImage.jpg",
       title: "Project Management App",
       description: "A portfolio website built using Next Js and Tailwind CSS.",
-      titleLink: "https://github.com/imyuvi1234/Project-Management",
-      link: "https://github.com/imyuvi1234/Project-Management",
+      titleLink: "https://github.com/yuvrajsharma97/Project-Management",
+      link: "https://github.com/yuvrajsharma97/Project-Management",
     },
   ];
 

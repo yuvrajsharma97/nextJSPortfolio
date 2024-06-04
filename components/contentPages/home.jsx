@@ -9,7 +9,7 @@ import { FaLinkedin, FaGithub, FaTwitter } from "react-icons/fa";
 const HomePage = () => {
   const socialMediaLinks = [
     { platform: "LinkedIn", url: "https://www.linkedin.com/in/yuvrajsharma97" },
-    { platform: "GitHub", url: "https://github.com/imyuvi1234" },
+    { platform: "GitHub", url: "https://github.com/yuvrajsharma97" },
     { platform: "Twitter", url: "https://twitter.com/i_m_yuvraj_s" },
   ];
 
