@@ -25,20 +25,24 @@ const Card = ({ image, title, titleLink, description, link }) => {
 
         <div class="p-5">
           <h5 class="mb-2 text-2xl font-bold text-center text-color3">
-            <a href={titleLink} target="_blank">
-              {title}
-            </a>
+            {title}
           </h5>
 
           <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
             {description}
           </p>
-          <div className="flex justify-center">
+          <div className="flex justify-around">
+            <Link
+              href={titleLink}
+              target="_blank"
+              className="border-2 border-color2 w-24 text-center shadow-none transition-shadow duration-300 hover:shadow-lg hover:shadow-gray-400 py-1 rounded-lg hover:bg-color2 hover:text-white">
+              <span>Live</span>
+            </Link>
             <Link
               href={link}
               target="_blank"
-              className="border-2 border-color2 px-3 py-1 rounded-lg hover:bg-color2 hover:text-white">
-              <span>View Details</span>
+              className="border-2 border-color2 w-24 text-center shadow-none transition-shadow duration-300 hover:shadow-lg hover:shadow-gray-400 py-1 rounded-lg hover:bg-color2 hover:text-white">
+              <span>Code</span>
             </Link>
           </div>
         </div>
