@@ -54,11 +54,12 @@ const Card = ({ image, title, titleLink, description, link }) => {
 const Project = () => {
   const porjectsObject = [
     {
-      image: "/assets/portflioImage.jpg",
-      title: "Next Js Portfolio",
-      description: "A portfolio website built using Next Js and Tailwind CSS.",
-      titleLink: "https://yuvrajsharmanextjsportfolio.vercel.app",
-      link: "https://github.com/yuvrajsharma97/nextJSPortfolio",
+      image: "/assets/csrImage.jpg",
+      title: "Computer Science Roadmap",
+      description:
+        "A website that provides roadmaps for computer science students.",
+      titleLink: "https://computer-science-roadmaps.vercel.app/",
+      link: "https://github.com/yuvrajsharma97/Computer-Science-Roadmaps",
     },
     {
       image: "/assets/pomodoroImage.jpg",
