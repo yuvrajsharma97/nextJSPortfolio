@@ -105,7 +105,7 @@ const Skills = () => {
   }, []);
 
   return (
-    <div id="skills" className="min-h-screen max-h-full w-full pt-5">
+    <div id="skills" className="py-[6rem] max-h-full w-full pt-5">
       <h1 className="text-center m-4">
         <span className="xs:text-3xl text-4xl  font-normal">
           <span className="text-color2">Skill</span> &{" "}

@@ -61,8 +61,8 @@ const HomePage = () => {
   }, []);
 
   return (
-    <div id="home" className="min-h-screen max-h-full w-full">
-      <div className="flex flex-wrap w-full pt-[6rem] lg:pt-[10rem]">
+    <div id="home" className="max-h-full w-full">
+      <div className="flex flex-wrap w-full py-[6rem] lg:pt-[10rem]">
         <div className="w-full lg:w-1/2 flex flex-col order-last">
           <div className="flex justify-center mt-[2rem] lg:mt-0">
             <Image
