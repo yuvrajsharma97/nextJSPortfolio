@@ -63,18 +63,19 @@ const Project = () => {
     },
     {
       image: "/assets/pomodoroImage.jpg",
-      title: "Pomodor Productivity App",
+      title: "Pomodor Productivity",
       description:
         "A pomodoro productivity app built using Next Js and Tailwind CSS.",
       titleLink: "https://pomodoro-next-js-chi.vercel.app/",
       link: "https://github.com/yuvrajsharma97/pomodoro-NextJS",
     },
     {
-      image: "/assets/projectmanageImage.jpg",
-      title: "Project Management App",
-      description: "A portfolio website built using Next Js and Tailwind CSS.",
-      titleLink: "https://github.com/yuvrajsharma97/Project-Management",
-      link: "https://github.com/yuvrajsharma97/Project-Management",
+      image: "/assets/mefitImage.jpg",
+      title: "MeFit",
+      description:
+        "A flexible workout tracker built for continuous improvement.",
+      titleLink: "https://mefit-virid.vercel.app/",
+      link: "https://github.com/yuvrajsharma97/mefit",
     },
   ];
 
