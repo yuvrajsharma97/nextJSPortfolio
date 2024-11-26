@@ -39,8 +39,6 @@ To run the development server:
 ```bash
 npm install
 ```
-The application will be available at http://localhost:3000.
-
 To run the application in a local environment:
 
 ```bash
